@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="container">
+<div class="addtext">
+    <input type="checkbox" id="click">
+    <label for="click" class="click-me">Add Task + </label>
+<div class="content">   
+
+ <form action="/" id="form" onsubmit="submited()">   
+        <label for="task-title">Title</label>
+        <input type="text" placeholder="Add Title" id="task-title">
+        <div id="noTask"> </div>
+        <label for="deadline"> Deadline</label>
+        <input type="date" name="" id="deadline" />
+
+        <label for="description"> Description</label>
+        <textarea name="description" id="description" cols="30" rows="10"> Your descriptions......
+        </textarea>
+        <div class="footer">
+        
+        <label for="click" id="close">Close</label>
+        <input type="submit" name="" id="form-submit">
+    </div>
+    </form>
+    </div>
+</div>
+
+
+<div class="task-list">
+    <h3>Uncompleted Tasks </h3>
+    <ul id="incomplete">
+</ul>
+
+</div>
+
+<div class="completed">
+    <h3>Completed Task</h3>
+    <ul id="mark-comp">
+
+
+    </ul>
+</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

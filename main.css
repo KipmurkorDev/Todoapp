@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#f9f4ef;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.container{
+height: 95%;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+justify-items: center;
+align-items: center;
+gap: 5px;
+}
+.addtext{
+text-align: center;
+width: 40%;
+}
+.task-list, .completed{
+    width: 55%;
+    border: 1px solid blue;
+}
+  #incomplete{
+  line-height: 1.5;
+  width: 90%;
+  list-style: none;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+
+
+.content
+{
+  margin-top: 20px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  visibility:hidden;  
+  width:30%;
+  height: 80%;
+  background-color:#e4ddf4;
+  padding: 30px 35px 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.click-me
+{
+  width:30%;
+  display: block;
+  background: #5D9B95;
+  text-align:center;
+  font-size:22px;
+  line-height:50px;
+  cursor:pointer;
+}
+#click
+{
+  background-color: white;
+  display:none;
+}
+.click-me:hover
+{
+  background-color: #0a5378;
+  color: white;
+}
+
+#click:checked~.content
+{
+  opacity:1;
+  visibility:visible;
+}
+
+#task-title, #description
+{
+background-color: white;
+font-size: 14px;
+color: black;
+font-weight: 400;
+}
+form label
+{
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}
+::placeholder
+{
+  color: #4b4e4d;
+  padding-left: 10px;
+}
+form input{
+  display: block;
+  height: 43px;
+  width: 80%;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+textarea {
+  width: 100%;
+  }
+
+ #incomplete li{
+background-color:#f3d2c1;
+padding: 10px;
+}
+
+.footer{
+  display: flex;
+  gap: 10px;
+  
+}
+
+
+ #form-submit{
+  font-size: 16px;
+  width:30%;
+  margin: 0;
+  cursor: pointer;
+  background-color: green;
+    
+}
+
+#close{
+  font-size: 16px;
+  width:22%;
+  margin: 0;
+  padding:12px;
+  text-align: center;
+  cursor: pointer;
+  background-color: green;
+}
+
+.edit{
+background-color: #0a5378;
+color: white;
+cursor: pointer;
+}
+.delete{
+  cursor: pointer;
+  color: white;
+  background: hwb(350 4% 8%);
+}
+#mark-comp{
+  width: 90%;
+display: grid;
+line-height: normal;
+grid-template-columns: repeat(3,1fr);
+gap: 12px;
+}
+#mark-comp span{
+  display: block;
+
+}
+.taskComplet{
+  background-color:#abd1c6;
+  padding: 12px;
+  list-style: none;
+  line-height: 1.5;
+}
+h3{
+  text-align: center;
+  font-size: x-large;
+}
